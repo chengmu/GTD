@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="panel">
+            <h2>Next Actions/下一步行动</h2>
+            <h2>InBox/收集箱</h2>
+            <h2>Someday/以后说不定</h2>
+            <h2>Waiting List/等待</h2>
+        </aside>
+        <div class="main">
+            <section id="inBoxPanel" class="container">
+                <header class="collect-todos">
+                    <input id="new-todo" type="text" placeholder="anything in your mind?">
+                </header>
+                <ul id="todo-list" class="todos-list">
+                </ul>
+            </section>
+        </div>
+        
+        
+    </div>
+    <script type="text/template" id="item-template">
+        <div class="view">
+            <input type="checkbox" class="toggle">
+            <label><%= title %></label>
+            <span class="delete">X</span>
+        </div>
+        <input type="text" class="edit" value="<%= title %>">
+    </script>
+    <script src="js/lib/zepto.js"></script>
+    <script src="js/lib/Underscore.js"></script>
+    <script src="js/lib/Backbone.js"></script>
+    <script src="js/lib/backbone.localStorage.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

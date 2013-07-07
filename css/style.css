@@ -1,0 +1,94 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	height: 100%;
+}
+.wrapper{
+	display: -webkit-flex;
+	min-height: 100%;
+}
+.wrapper > aside {
+	-webkit-flex : 1;
+	-webkit-order: 1;
+	background: lightblue;
+}
+aside{
+    display:inline-block;    
+    width:20%;
+}
+aside h2{
+    font-size:12px;
+}
+.wrapper > .main{
+	-webkit-order:2;
+    width: 78%;
+    display:inline-block;
+    vertical-align: top;
+    background: azure;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+.collect-todos{
+    padding: 20px 0 0 0;
+
+}
+.collect-todos input{
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    font-size: 20px;
+    display: inherit;
+}
+.todos-list{
+    padding: 0 10% 20px;
+
+}
+.todos-list li{
+    list-style: none;
+
+}
+.todos-list li .view{
+    font-size: 24px;
+
+    line-height: 20px;
+    position: relative;
+}
+.todos-list li .view .toggle{
+	
+}
+.todos-list li .view .label{
+
+}
+
+.todos-list li .view .delete{
+    cursor: pointer;
+
+    position: absolute;
+    right: 0;
+}
+.todos-list li .edit{
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+    display: none;
+}
+.todos-list .edit-mode .edit{
+	display: block;
+}
+.todos-list .edit-mode .view{
+	display: none;
+}
+.todos-list .done .view{
+	text-decoration: line-through;
+	color: rgb(170, 170, 170);
+}
